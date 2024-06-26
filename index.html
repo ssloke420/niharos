@@ -5,7 +5,19 @@
     <style>
       body {
         background-image: url('https://cdn.discordapp.com/attachments/1247989632558305382/1255642325670166538/IMG_20240626_171938.jpg?ex=667ddf8b&is=667c8e0b&hm=6086834fc077b65f7f09c28f2edfbea9fe9fe672fec62bfe9c752437a57c77fe&');
+        background-size: fill;
       }
+      #taskbar {
+        height: 50px;
+        width: 100%;
+        background-color: lightgray;
+      }
+      #tray {
+        margin-left: auto; /* Aligns the tray to the right */
+        display: flex;
+        color: black;
+        padding-right: 10px; /* Added padding to the right */
+}
     </style>
   </head>
   <body>
@@ -13,6 +25,9 @@
       
     </div>
     <div id = "taskbar">
+      <div id = "tray">
+        <p id="time">Jun 26  |  6:06 PM</p>
+      </div>
     </div>
   </body>
 </html>
