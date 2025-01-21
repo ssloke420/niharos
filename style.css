@@ -57,3 +57,102 @@ body {
 #battery-level {
   font-size: 12px;
 }
+#start-button {
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #0078d4;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+#start-menu {
+  position: fixed;
+  bottom: 40px;
+  left: 10px;
+  background-color: #2e2e2e;
+  color: white;
+  width: 200px;
+  display: none;
+  border: 1px solid #444;
+  z-index: 1000;
+}
+
+#start-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+#start-menu li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#start-menu li:hover {
+  background-color: #444;
+}
+
+/* Taskbar Apps */
+#taskbar-apps {
+  display: flex;
+  gap: 10px;
+}
+
+#taskbar-apps .taskbar-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #0078d4;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* App Container */
+#app-container {
+  position: fixed;
+  inset: 0 0 40px 0;
+  overflow: auto;
+  z-index: 500;
+}
+/* App Windows */
+.app-window {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 400px;
+  height: 300px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: #0078d4;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: move;
+}
+
+.app-header .close-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.app-content {
+  flex-grow: 1;
+  padding: 10px;
+  overflow: auto;
+}
