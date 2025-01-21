@@ -26,7 +26,7 @@
 
 // Initial call to set the time immediately on page load
     updateDateTime();
-//nihar
+//nihar trivedi
 navigator.getBattery().then(function(battery) {
     function updateBatteryStatus() {
       const batteryLevel = Math.floor(battery.level * 100);
