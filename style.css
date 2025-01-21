@@ -1,5 +1,5 @@
 body {
-  background-image: url('https://cdn.discordapp.com/attachments/1247989632558305382/1255642325670166538/IMG_20240626_171938.jpg?ex=667ddf8b&is=667c8e0b&hm=6086834fc077b65f7f09c28f2edfbea9fe9fe672fec62bfe9c752437a57c77fe&');
+  background-image: url('IMG_20240626_171938.webp');
   background-repeat: none;
   background-size:cover;
   font-family: Calibri;
@@ -11,6 +11,7 @@ body {
   bottom: 0;
   margin: 0;
   padding: 5px;
+  position: fixed;
 }
 #tray {
   margin-left: auto; /* Aligns the tray to the right */
