@@ -119,7 +119,7 @@ body {
   overflow: auto;
   z-index: 500;
 }
-/* App Windows */
+/* App Window */
 .app-window {
   position: absolute;
   top: 100px;
