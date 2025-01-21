@@ -2,29 +2,7 @@
 <html>
   <head>
     <title>Nihar OS</title>
-    <style>
-      body {
-        background-image: url('https://cdn.discordapp.com/attachments/1247989632558305382/1255642325670166538/IMG_20240626_171938.jpg?ex=667ddf8b&is=667c8e0b&hm=6086834fc077b65f7f09c28f2edfbea9fe9fe672fec62bfe9c752437a57c77fe&');
-        background-repeat: none;
-        background-size:cover;
-        font-family: Calibri;
-      }
-      #taskbar {
-        height: 50px;
-        width: 100%;
-        background-color: lightblue;
-        bottom: 0;
-        margin: 0;
-        padding: 5px;
-      }
-      #tray {
-        margin-left: auto; /* Aligns the tray to the right */
-        display: flex;
-        color: black;
-        padding-right: 10px; /* Added padding to the right */
-        font-size: 15pt;
-}
-    </style>
+
   </head>
   <body>
     <div id = "header">
@@ -35,35 +13,6 @@
         <p id="time">Jun 26  |  6:06 PM</p>
       </div>
     </div>
-    <script>
-  function updateDateTime() {
-    const timeElement = document.getElementById('time');
-    const now = new Date();
-
-    // Format the time
-    const timeOptions = {
-        hour: 'numeric',
-        minute: 'numeric',
-        hour12: true
-    };
-    const time = now.toLocaleTimeString('en-US', timeOptions);
-
-    // Format the date
-    const dateOptions = {
-        weekday: 'short',
-        month: 'short',
-        day: 'numeric'
-    };
-    let date = now.toLocaleDateString('en-US', dateOptions);
-    date = date.replace(',', ''); // Remove the comma
-
-    timeElement.innerHTML = `${date} &nbsp; &nbsp; ${time}`;
-}
-// Update the time every second
-    setInterval(updateDateTime, 1000);
-
-// Initial call to set the time immediately on page load
-    updateDateTime();
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
