@@ -17,7 +17,7 @@ body {
     overflow: hidden;
 }
 #tray {
-    margin-left: auto; /* Aligns the tray to the right */
+    margin-left: auto; /* Aligns the tray to the right  */
     display: flex;
     align-items: center;
     color: black;
